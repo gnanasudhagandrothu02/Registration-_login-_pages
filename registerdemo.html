@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>registrationForm</title>
+    </head>
+    <body>
+        <h1>Employee Registration Form</h1>
+        <form id="registrationForm" action="/reister" method="GET">
+            <label>Full Name:</label>
+            <input type="text" id="FullName" name="Full Name">
+            <br><br>
+            <label>User Name: </label>
+            <input type="text"id="Username" name="user Name" >
+            <br><br>
+            <input type="submit" value="register">
+            <input type="submit" value="reset">
+        </form>
+        <script>
+            document.getElementById("registrationForm").addEventListener("submit",
+                function(){
+                let FullName=document.getElementById("FullName").value;
+                console.log(FullName)
+                let username=document.getElementById("Username").value;
+                console.log(username)
+
+                }
+            );
+        </script>
+    </body>
+</html>
